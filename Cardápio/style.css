@@ -1,0 +1,222 @@
+@import url('https://fonts.cdnfonts.com/css/biko');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Biko", sans-serif;
+}
+
+a{
+    text-decoration: none;
+}
+
+body{
+    background-color: #fff;
+    transition: opacity 0.5s ease-in-out;
+    opacity: 0;
+}
+
+body.loaded {
+    opacity: 2;
+}
+
+.modelos {
+    display: none;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: #FF3131;
+    color: #fff;
+    font-family: 'biko', sans-serif;
+}
+
+.itens h2{
+    font-size: 4rem;
+}
+
+.retornar{
+    background-color: #fff;
+    border: #C62828 solid 5px;
+    color: #FF3131;
+    font-size: 1rem;
+    font-family: 'biko', sans-serif;
+    border-radius: 100px;
+    padding: 10px;
+    transition: 0.4s ease-in-out;
+    cursor: pointer;
+}
+
+.retornar:hover{
+    background-color: #FF3131;
+    color: #fff;
+    border-color: #fff;
+}
+
+.lanche-item {
+    border: 1px solid #ccc;
+    margin: 10px;
+    padding: 10px;
+    display: inline-block;
+    text-align: center;
+    font-family: 'biko', sans-serif;
+    width: calc(32.33% - 10px);
+    box-sizing: border-box;
+}
+
+.lanche-item img {
+    width: 30%;
+}
+
+.lanche-item--add {
+    background-color: #C62828;
+    color: #FFf;
+    font-size: 2rem;
+    border-radius: 100px;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
+
+.lanche-item--add:hover {
+    background-color: #FF3131;
+}
+
+@keyframes aparecer {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.area-carrinho {
+    position: fixed;
+    right: 0;
+    top: 0;
+    width: 300px;
+    background: #fff;
+    border-left: 1px solid #ccc;
+    padding: 20px;
+    display: none;
+    animation: aparecer 0.5s;
+    font-family: 'biko', sans-serif;
+}
+
+.area-acompanhamentos {
+    justify-content: space-between;
+}
+
+.menu-aberto {
+    cursor: pointer;
+    font-size: 2rem;
+}
+
+.menu-fechar{
+    cursor: pointer;
+}
+
+.carrinho {
+    margin-top: 20px;
+}
+
+.total-carrinho {
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+.remove-btn {
+    cursor: pointer;
+    background-color: #C62828;
+    color: #fff;
+    padding: 10px;
+    font-size: 0.8rem;
+    border-radius: 50px;
+    transition: 0.3s ease-in-out;
+}
+
+.remove-btn:hover{
+    background-color: #FF3131;
+}
+
+.finalizar-compra {
+    text-decoration: none;
+    margin-top: 20px;
+    padding: 10px;
+    background: #C62828;
+    text-align: center;
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
+}
+
+.finalizar-compra:hover{
+    background-color: #FF3131;
+}
+
+.finalizar-compra a{
+    color: #fff;
+}
+
+footer {
+    background-color: #FF3131;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer-container .footer-links {
+    margin-bottom: 20px;
+}
+
+.footer-container .footer-links a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
+    font-size: 1rem;
+}
+
+.footer-container .footer-links a:hover {
+    text-decoration: underline;
+}
+
+.footer-container .footer-bottom {
+    font-size: 1rem;
+}
+
+@media screen and (max-width: 1280px){
+    .lanche-item img{
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 768px){
+
+    footer{
+        margin-top: 18%;
+    }
+
+    .footer-container {
+        flex-direction: column;
+    }
+    
+    .footer-container .footer-links {
+        margin-bottom: 10px;
+    }
+    
+    .footer-container .footer-links a {
+        display: block;
+        margin: 5px 0;
+    }
+}
