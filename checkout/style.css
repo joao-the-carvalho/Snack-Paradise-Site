@@ -24,12 +24,6 @@ body.loaded {
     height: 80px
 }
 
-.container{
-    max-width: 1280px;
-    max-height: 720px;
-    margin: auto;
-}
-
 .flex{
     display: flex;
     align-items: center;
@@ -40,7 +34,7 @@ header{
     width: 100%;
     position: relative;
     z-index: 1;
-    height: 20vh;
+    height: 15vh;
     top: 0;
     left: 0;
     box-shadow: 2px 2px 20px #000;
@@ -340,6 +334,10 @@ footer {
 }
 
 @media screen and (max-width: 768px) {
+    
+    header{
+        height: 30vh;
+    }
 
     .logo {
         width: 50px;
