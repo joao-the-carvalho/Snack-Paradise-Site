@@ -41,7 +41,7 @@ header{
     padding: 20px 4%;
     position: relative;
     z-index: 1;
-    height: 125px;
+    height: 20vh;
     top: 0;
     left: 0;
     box-shadow: 2px 2px 20px #000;
@@ -614,8 +614,8 @@ footer {
             margin: 5px 0;
     }
     .logo{
-        width: 20px;
-        height: 20px;
+        width: 50px;
+        height: 50px;
     }
     header{
         padding-top: 0;
@@ -625,9 +625,47 @@ footer {
         padding-left: 60px;
     }
 }
-@media (max-width: 530px) {
+
+@media (max-width: 478px) {
     header{
         text-align: center;
+    }
+}
+
+@media screen and (max-width: 700px){
+    header ul li a{
+        font-size: 1.2rem;
+    }
+    .btn-conta button{
+        font-size: 1rem;
+        margin-top: 20%;
+    }
+}
+
+
+@media (max-width: 612px) {
+    .btn-opcoes{
+        flex-direction: column;
+        padding: 12% 0 12% 0;
+    }
+    header ul li{
+        padding: 0;
+    }
+    .botao {
+        width: 30vh;
+        height: 20vh;
+    }
+    
+}
+
+@media (max-width: 508px) {
+    header ul li a{
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 526px) {
+    header{
         font-size: 1rem;
     }
 }

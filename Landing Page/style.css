@@ -44,7 +44,7 @@ header{
     padding: 20px 4%;
     position: relative;
     z-index: 1;
-    height: 125px;
+    height: 20vh;
     top: 0;
     left: 0;
     box-shadow: 2px 2px 20px #000;
@@ -311,29 +311,18 @@ footer {
 
 .footer-container .footer-bottom {
     font-size: 1rem;
-}
-
-@media screen and (max-width: 1650px){
-    section.slider{
-        height: 80vh;
-    }
-}    
-
-@media screen and (max-width: 1220px){
-    section.slider{
-        height: 50vh;
-    }
-}    
+}  
 
 @media screen and (max-width: 768px){
 
     section.slider{
-        height: 40vh;
+        width: 100%;
+        height: 100%;
     }
 
     .botao {
         height: 25vh;
-        width: 35vw; 
+        width: 35vh; 
     }
     .flex{
         flex-direction: column;
@@ -363,8 +352,8 @@ footer {
         margin: 5px 0;
     }
     .logo{
-        width: 20px;
-        height: 20px;
+        width: 50px;
+        height: 50px;
     }
     header{
         padding-top: 0;
@@ -384,6 +373,17 @@ footer {
        font-size: 1.4rem;
     }
 }
+
+@media screen and (max-width: 700px){
+    header ul li a{
+        font-size: 1.2rem;
+    }
+    .btn-conta button{
+        font-size: 1rem;
+        margin-top: 20%;
+    }
+}
+
 @media (max-width: 612px) {
     .btn-opcoes{
         flex-direction: column;
@@ -392,7 +392,17 @@ footer {
     header ul li{
         padding: 0;
     }
+    .botao {
+        width: 30vh;
+        height: 20vh;
+    }
     
+}
+
+@media (max-width: 508px) {
+    header ul li a{
+        font-size: 1rem;
+    }
 }
 @media (max-width: 340px) {
     .botao{
@@ -406,6 +416,7 @@ footer {
         font-size: 0.7rem;
     }
 }
+
 @media (max-width: 526px) {
     header{
         font-size: 1rem;
@@ -414,9 +425,5 @@ footer {
 @media (max-width: 480px) {
     header{
         font-size: 0.7rem;
-    }
-    .botao {
-        height: 20vh;
-        width: 30vw;
     }
 }

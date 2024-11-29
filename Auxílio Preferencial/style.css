@@ -106,6 +106,11 @@ header ul li a{
     transform: scale(1.3);
 }
 
+.conta.scroll{
+    color: #fff;
+    border: solid #fff;
+}   
+
 main{
     align-items: center;
     justify-content: space-between;
@@ -164,17 +169,10 @@ footer {
 
 @media screen and (max-width: 768px){
 
-    .flex{
+    main{
         flex-direction: column;
     }
-    .container{
-        position: relative;
-        display: flex;
-        padding: 0;
-        margin: 0;
-        width: 100%;
-    }
-
+    
     footer{
         margin-top: 18%;
     }
@@ -191,45 +189,34 @@ footer {
         display: block;
         margin: 5px 0;
     }
-    .logo{
-        width: 20px;
-        height: 20px;
-    }
-    header{
-        padding-top: 0;
-        font-size: 1rem;
-    }
-
-    header ul li{
-        padding-left: 60px;
-    }
-
-    main{
-        flex-direction: column;
-    }
-
     .text{
         font-size: 1.4rem;
     }
 }
-@media (max-width: 612px) {
-    .btn-opcoes{
-        flex-direction: column;
-        padding: 12% 0 12% 0;
+@media screen and (max-width: 700px){
+    header ul li a{
+        font-size: 1.2rem;
+    }
+    .btn-conta button{
+        font-size: 1rem;
+    }
+}
+
+@media screen and (max-width: 666px){
+    header ul li a{
+        font-size: 1.2rem;
     }
     header ul li{
         padding: 0;
     }
-    
-}
-@media (max-width: 340px) {
-    .botão1{
-        height: 150px;
-        width: 185px;
+    .btn-conta button{
+        font-size: 0.7rem;
     }
-    .botão2{
-        height: 150px;
-        width: 185px;
+}
+
+@media (max-width: 508px) {
+    header ul li a{
+        font-size: 1rem;
     }
 }
 @media (max-width: 478px) {

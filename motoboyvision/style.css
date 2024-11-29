@@ -35,7 +35,6 @@ body.loaded {
     border-radius: 20px;
     width: fit-content;
     display: flex;
-    flex-direction: column;
     align-items: center;
     justify-content: center;
     padding: 15px;
@@ -351,14 +350,6 @@ footer {
     .btn-conta button{
         font-size: 1rem;
     }
-    .tabela {
-        flex-direction: column;
-        width: 100%;
-    }
-
-    .coluna {
-        margin: 10px 0;
-    }
 }
 
 @media screen and (max-width: 669px){
@@ -385,26 +376,6 @@ footer {
     }
     .texto-slider{
         font-size: 1.2rem;
-    }
-     .tabela {
-        padding: 10px;
-    }
-
-    .img1, .img2 {
-        width: 80px;
-    }
-
-    h2 {
-        font-size: 20px;
-    }
-
-    p {
-        font-size: 14px;
-    }
-
-    .btn {
-        padding: 8px 15px; 
-        font-size: 14px; 
     }
 }
 

@@ -24,7 +24,7 @@ body.loaded {
 
 .logo{
     width: 80px;
-    height: 80px
+    height: 80px;
 }
 
 .container{
@@ -44,7 +44,7 @@ header{
     padding: 20px 4%;
     position: relative;
     z-index: 1;
-    height: 125px;
+    height: 20vh;
     top: 0;
     left: 0;
     box-shadow: 2px 2px 20px #000;
@@ -140,7 +140,8 @@ section.slider {
     position: relative;
     background: #fff;
     margin-top: 10%;
-    border: solid #000 15px;
+    border: solid #000 5px;
+    margin: auto;
 }
 
 .slider-content {
@@ -314,6 +315,7 @@ footer {
 }
 
 @media screen and (max-width: 850px){
+
     .botão1, .botão2 {
         height: 200px;
         width: 250px;
@@ -322,6 +324,11 @@ footer {
 }
 
 @media screen and (max-width: 768px){
+
+    section.slider{
+        height: 100%;
+        width: 100%;
+    }
 
     .flex{
         flex-direction: column;
@@ -351,8 +358,8 @@ footer {
         margin: 5px 0;
     }
     .logo{
-        width: 20px;
-        height: 20px;
+        width: 50px;
+        height: 50px;
     }
     header{
         padding-top: 0;
@@ -380,6 +387,7 @@ footer {
     }
     .btn-conta button{
         font-size: 1rem;
+        margin-top: 20%;
     }
 }
 
@@ -398,6 +406,12 @@ footer {
     }
     .btn-conta button{
         font-size: 0.7rem;
+    }
+}
+
+@media (max-width: 612px) {
+    header ul li{
+        padding: 0;
     }
 }
 
@@ -420,12 +434,20 @@ footer {
         width: 185px;
     }
 }
+
+@media (max-width: 508px) {
+    header ul li a{
+        font-size: 1rem;
+    }
+}
+
 @media (max-width: 478px) {
     header{
         text-align: center;
         font-size: 0.7rem;
     }
 }
+
 @media (max-width: 526px) {
     header{
         font-size: 1rem;
