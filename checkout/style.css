@@ -79,29 +79,6 @@ header ul li a{
     color: #FF3131;
 }
 
-.btn-conta button{
-    background: none;
-    border: none;
-    cursor: pointer;
-    color: #FF3131;
-    border: solid #FF3131;
-    padding: 5px;
-    transition: 500ms;
-    font-size: 1.5rem;
-}   
-
-.btn-conta button:hover{
-    background-color: #FF3131;
-    color: #fff;
-    border: solid #fff;
-    transform: scale(1.3);
-}
-
-.conta.scroll{
-    color: #fff;
-    border: solid #fff;
-} 
-
 .btn-danger:hover {
     color: black;
 }
@@ -328,9 +305,6 @@ footer {
     header ul li{
         padding: 0;
     }
-    .btn-conta button{
-        font-size: 0.7rem;
-    }
 }
 
 @media screen and (max-width: 768px) {
@@ -430,11 +404,6 @@ footer {
 @media screen and (max-width: 700px){
     header ul li a{
         font-size: 1.2rem;
-    }
-    .btn-conta button{
-        font-size: 1rem;
-        margin-top: 0;
-        padding: 2px;
     }
 }
 
