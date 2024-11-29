@@ -43,7 +43,6 @@ https://github.com/joao-the-carvalho
 * Landing Page
 * Menu
 * Cardápio 
-* Carrinho
 * Login
 * Checkout 
 * Auxílio Preferêncial 
